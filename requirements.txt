@@ -1,7 +1,7 @@
 fastapi
 uvicorn
 ultralytics
-pillow
-numpy
-python-multipart
+opencv-python-headless
 supabase
+deep-translator
+unidecode
