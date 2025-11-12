@@ -7,8 +7,8 @@ import os
 # ======================
 # 🔑 CONFIGURAÇÃO DO SUPABASE
 # ======================
-SUPABASE_URL = "https://tawiuodyookyckzfbfdt.supabase.co"
-SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRhd2l1b2R5b29reWNremZiZmR0Iiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc0NDQ2Njc4NiwiZXhwIjoyMDYwMDQyNzg2fQ.IE9l5HYmWtPtuS9M1y72z_KE2C8DDH83SaF4hY4d2qA"
+SUPABASE_URL = os.getenv("SUPABASE_URL")
+SUPABASE_KEY = os.getenv("SUPABASE_KEY")
 TABLE_NAME = "alimentos"
 
 supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
